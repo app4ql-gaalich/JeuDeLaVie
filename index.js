@@ -2,14 +2,14 @@ window.onload = function() {
         var canvas = document.getElementById('can');
         var context = canvas.getContext('2d');
         var a = [];
-        var nb = document.getDocumentById("nb").value;
-        var taille = document.getDocumentById("taille").value;
+        var nb = document.getElementById("nb").value;
+        var taille = document.getElementById("taille").value;
         setInterval(anime, 1000);
        
         function anime() {
             context.fillStyle = "green";
-			var nb = document.getDocumentById("nb").value;
-			var taille = document.getDocumentById("taille").value;
+			var nb = document.getElementById("nb").value;
+			var taille = document.getElementById("taille").value;
             context.clearRect(0, 0, canvas.width, canvas.height);
             for (i=0; i<nb; i++) {
                 for (j=0; j<nb; j++) {
